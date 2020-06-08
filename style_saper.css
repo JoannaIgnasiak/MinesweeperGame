@@ -1,0 +1,243 @@
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  background-color: hsl(228, 28%, 20%);
+}
+
+
+
+ div {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  padding-top: 1em;
+  text-align: center;
+  background-color: hsl(230, 17%, 14%);
+  color: white;
+  height: 14em;
+  border-radius: 0 0 2em 2em;
+   
+}
+
+.first_line{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.headline{
+  padding: 1em 0 1em 0;
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+.button_section{
+  display: flex;
+  flex-direction: row;
+  height: 4em;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  width: 8em;
+  height: 3.5em;
+  padding: 5px;
+  margin: 1em;
+  font-weight: 700;
+  border-radius: .5em;
+  border: none;
+  cursor: pointer;
+}
+
+.not_standard{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  top: -5em;
+}
+
+.not_standard_line{
+  width: 28em;
+  padding-top: .7em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+input {
+  width: 15em;
+}
+
+label{
+  font-size: 16px;
+  padding: 5px;
+}
+
+#newGameButton{
+  font-weight: 800;
+  letter-spacing: .1em;
+  border: none;
+  background-image: linear-gradient(to right, hsl(210, 78%, 56%) , hsl(146, 68%, 55%));
+}
+
+#give_up{
+  background-image: linear-gradient(to right, hsl(210, 78%, 56%) , hsl(146, 68%, 55%));
+  padding: 0.5em;
+  width: 10em;
+  box-shadow: 3px 7px;
+}
+
+.game_space{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  top:-3em; 
+}
+
+.gameHeadline {
+  width: 15em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 2em;
+}
+
+.info_view{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: .1em .1em .1em .5em;
+  background-color: hsl(227, 47%, 96%);
+  border-radius: .5em;
+}
+  
+.headline_img{    
+  width: 2em;
+  height: 2em;
+  margin-right: .5em;
+}
+ 
+.textview{
+  background-color: hsl(227, 47%, 96%);
+  border: none;
+  width: 2.5em;
+}
+
+td {
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  background-color: grey;
+  background-repeat: no-repeat;
+  background-size: 30px 30px;   
+  position: relative;
+  z-index: 1;
+}
+
+.bomb, .one, .two, .three, .four, .five, .six, .seven, .eight, .empty {
+  width: 30px;
+  height: 30px;
+  background-image: url(./images/imageuncover.png);
+  background-repeat: no-repeat;
+  background-size: 30px 30px;
+  position: relative;
+  z-index: 2;
+}
+
+.won {
+  background-image: url(./images/imagesmileface.jpg);
+  background-repeat: no-repeat;
+  background-size: 30px 30px;
+  position: relative;
+  z-index: 1;
+}
+
+.flaga {
+  background-image: url(./images/imageflaga.png);
+  background-repeat: no-repeat;
+  background-size: 30px 30px;
+  background-color: rgb(185, 21, 185);
+}
+
+.empty.odsloniety{
+  background-image: url(./images/image0.png);
+  background-repeat: no-repeat;
+  background-size: 30px 30px;
+}
+
+.bomb.odsloniety {
+  background-image: url(./images/imagebomb.png);
+  background-repeat: no-repeat;
+  background-size: 30px 30px;
+  background-color: red;
+}
+
+.one.odsloniety { 
+  background-image: url(./images/image1.png);
+  background-repeat: no-repeat;
+  background-size: 30px 30px;
+  background-color: blue;
+}
+
+.two.odsloniety {
+  background-image: url(./images/image2.png);
+  background-repeat: no-repeat;
+  background-size: 30px 30px;
+  background-color: green; 
+}
+
+.three.odsloniety {
+  background-image: url(./images/image3.png);
+  background-repeat: no-repeat;
+  background-size: 30px 30px;
+  background-color: pink; 
+}
+
+.four.odsloniety {
+  background-image: url(./images/image4.png);
+  background-repeat: no-repeat;
+  background-size: 30px 30px;
+  background-color: purple; 
+}
+
+.five.odsloniety {
+  background-image: url(./images/image5.png);
+  background-repeat: no-repeat;
+  background-size: 30px 30px;
+  background-color: purple; 
+}
+
+.six.odsloniety {
+  background-image: url(./images/image6.png);
+  background-repeat: no-repeat;
+  background-size: 30px 30px;
+  background-color: purple; 
+}
+
+.seven.odsloniety {
+  background-image: url(./images/image7.png);
+  background-repeat: no-repeat;
+  background-size: 30px 30px;
+  background-color: purple; 
+}
+
+.eight.odsloniety {
+  background-image: url(./images/image8.png);
+  background-repeat: no-repeat;
+  background-size: 30px 30px;
+  background-color: purple; 
+}
+
+
+ 

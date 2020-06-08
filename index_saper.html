@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html >
+
+  <head>
+    <title>Minesweeper</title>
+    <link rel="stylesheet" href="style_saper.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    
+  </head>
+
+  <body oncontextmenu="return false;">
+    <header>
+      <div class="first_line">
+        <div class="headline">Saper! To start the game select level:</div>
+      </div>
+         <div class="button_section">
+            <button id="give_up">I give up! <br>Restart game</button>
+            <button id="easy">Easy</buton>
+            <button id="medium">Medium</button>
+            <button id="hard">Hard</button>
+            <button id="notStandard">Not standrad</button>
+        </div>
+        <div class="not_standard">
+          <div class="not_standard_line">
+              <label for="numRows"id="numRows_label">Number of rows (8-30):</label>
+              <input type="number"  id=numRows> </div>
+        <div class="not_standard_line">
+         <label for="numCol" id="numCol_label">Number of columns(8-30):</label>
+         <input type="number" id=numCol></div>
+        <div class="not_standard_line">
+              <label for="numBomb" id="numBomb_label">Number of bombs (10-240):</label>
+              <input type="number" id=numBomb></div>
+         <button id="newGameButton"> START</button>
+        </div>
+
+        </header>
+        <div class="game_space" id="game_space">
+         <div class="gameHeadline" id="gameHeadline">
+           <div class="info_view">
+            <img class="headline_img" id="bomb_img" src="./images/imagebomb.png">
+            <input class="textview" id="numBombView" disabled>
+          </div>
+          <div class="info_view">
+            <img class="headline_img" id="klepsydra_img" src="./images/imageklepsydra.png">
+            <input class="textview" id="clock" disabled>
+          </div>
+        </div>
+        <div id="board"></div>
+       
+      </div>
+    
+    <script src="script_saper.js"></script>
+    
+  </body>
+
+</html>
